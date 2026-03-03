@@ -20,10 +20,22 @@ namespace figurasGeometricas.figurasGeo
 
         public string tipodfig()
         {
-            Console.WriteLine("Ingresa tipo de figura: " +
-                "circulo, rectangulo, triangulo, triangulo rectangulo");
-                string tipofig = Console.ReadLine();
-            return tipofig;
+           string tipofig;
+            while (true)
+            {
+                Console.WriteLine("Ingresa tipo de figura: circulo, rectangulo, triangulo, triangulo rectangulo");
+                tipofig = Console.ReadLine().ToLower();
+
+                if (tipofig == "circulo" ||
+                    tipofig == "rectangulo" ||
+                    tipofig == "triangulo" ||
+                    tipofig == "triangulo rectangulo")
+                {
+                    return tipofig;
+                }
+
+                Console.WriteLine("No es una figura válida, intenta otra vez.");
+            }
         }
         public void MostrarInformacion()
         {

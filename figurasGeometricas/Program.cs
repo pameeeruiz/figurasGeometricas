@@ -13,7 +13,7 @@ namespace figurasGeometricas
         /// Gutierrez Ruiz Evelyn Pamela
         /// esta clase es la encargada de crear objetos de tipo figura, circulo, rectangulo y triangulo rectangulo, mostrar su informacion, cambiar el color y calcular su area.
         /// </summary>
-        /// <param name="args"></param>
+       
         static void Main(string[] args)
         {
 			try
@@ -32,10 +32,11 @@ namespace figurasGeometricas
                 Console.WriteLine("Cambio color:");
                 circulo.MostrarInformacion();
 
-                circulo.CalcularArea();
-                triangulo.CalcularArea();
-                rectangulo.CalcularArea();
-                TrianguloRectangulo.CalcularArea();
+               double areatotal=    
+                    circulo.CalcularArea() +
+                    triangulo.CalcularArea()+
+                    rectangulo.CalcularArea()+
+                    TrianguloRectangulo.CalcularArea();
             }
 			catch (Exception ex)
 			{
