@@ -34,7 +34,7 @@ namespace figurasGeometricas.figurasGeo
             Console.WriteLine($"Área: {CalcularArea()}");
             Console.WriteLine($"Perímetro: {CalcularPerimetro()}");
 
-            Console.WriteLine($"Tu tipo de figura es: {this.GetType().Name} Color: {color} Area: {CalcularArea()} Perímetro: {CalcularPerimetro()}");
+            Console.WriteLine($"Tu tipo de figura es: {tipodfig()} Color: {color} Area: {CalcularArea()} Perímetro: {CalcularPerimetro()}");
         }
 
         public void NuevoColor(string nuevoColor)
